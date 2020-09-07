@@ -168,11 +168,9 @@ class _ExercisesPageState extends State<ExercisesPage> {
             );
             print('Deleted');
           });
-
         }
       },
       itemBuilder: (context) => [
-
         PopupMenuItem(
           value: 1,
           child: Row(
@@ -191,8 +189,6 @@ class _ExercisesPageState extends State<ExercisesPage> {
       ],
     );
   }
-
-
 
   Future<void> deleteExercises(String exerciseID) async {
     await FirebaseFirestore.instance
