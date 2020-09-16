@@ -191,7 +191,7 @@ class _UserPageState extends State<UserPage> {
                                       height: 8,
                                     ),
                                     Container(
-                                      width: 210,
+                                      width: 200,
                                       child: Text(
                                         snapshot2.data()['name'].toString() +
                                             ' ' +

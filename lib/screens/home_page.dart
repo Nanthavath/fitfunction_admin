@@ -29,12 +29,14 @@ class _HomePageState extends State<HomePage> {
           style: TextStyle(color: Colors.orange),
         ),
       ),
-      body: Center(
+      body: SingleChildScrollView(
+        
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ListView(
               shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               children: [
                 Container(
                   decoration: BoxDecoration(),

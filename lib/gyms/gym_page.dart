@@ -140,7 +140,7 @@ class _GymPageState extends State<GymPage> {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return TrainerPage(snapGym.id);
+                                      return TrainerPage(snapGym.id,snapGym.data()['name']);
                                     },
                                   ),
                                 );

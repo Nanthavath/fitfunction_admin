@@ -7,22 +7,24 @@ import 'addTrainer_page.dart';
 // ignore: must_be_immutable
 class TrainerPage extends StatefulWidget {
   String gymKey;
-  TrainerPage(this.gymKey);
+  String name;
+  TrainerPage(this.gymKey,this.name);
 
   @override
-  _TrainerPageState createState() => _TrainerPageState(gymKey);
+  _TrainerPageState createState() => _TrainerPageState(gymKey,name);
 }
 
 class _TrainerPageState extends State<TrainerPage> {
   String gymID;
-  _TrainerPageState(this.gymID);
+  String name;
+  _TrainerPageState(this.gymID,this.name);
   String searchkey;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Gym Ngo2'),
+        title: Text(name),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
@@ -248,7 +250,7 @@ class _TrainerPageState extends State<TrainerPage> {
                                             height: 8,
                                           ),
                                           Container(
-                                            width: 210,
+                                            //width: 200,
                                             child: Text(
                                               snapshot2
                                                   .data()['name']
